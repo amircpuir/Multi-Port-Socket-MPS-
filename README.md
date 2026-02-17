@@ -9,7 +9,7 @@ A lightweight and high-performance native Python tunneling tool designed to forw
 Copy and paste the following command into your terminal to download the script:
 
 ```bash
-wget -O mps.py [https://raw.githubusercontent.com/amircpuir/Multi-Port-Socket-MPS-/main/mps.py](https://raw.githubusercontent.com/amircpuir/Multi-Port-Socket-MPS-/main/mps.py)
+wget -O mps.py https://raw.githubusercontent.com/amircpuir/Multi-Port-Socket-MPS-/main/mps.py
 🚀 Step 2: Run in Screen (Background Mode)
 To ensure the tunnel stays active after closing the terminal, run the script inside a screen session:
 
