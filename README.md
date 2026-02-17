@@ -1,39 +1,50 @@
+بسیار خب، برای اینکه پروژه‌ات در گیت‌هاب بین‌المللی به نظر برسد، این متن انگلیسی استاندارد و حرفه‌ای را جایگزین محتوای قبلی در README.md کن. تمام کادربندی‌ها رعایت شده تا دکمه کپی برای کاربران فعال شود:
 
 Markdown
 # 🛡️ Multi Port Socket (MPS)
 
-### 📥 مرحله اول: دانلود اسکریپت
-این دستور را کپی و در ترمینال وارد کنید:
+A lightweight and high-performance native Python tunneling tool designed to forward multiple ports through a single TCP socket.
+
+---
+
+### 📥 Step 1: Download the Script
+Copy and paste the following command into your terminal to download the script:
 
 ```bash
 wget -O mps.py [https://raw.githubusercontent.com/amircpuir/Multi-Port-Socket-MPS-/main/mps.py](https://raw.githubusercontent.com/amircpuir/Multi-Port-Socket-MPS-/main/mps.py)
-🚀 مرحله دوم: ساخت اسکرین و اجرا
-برای اجرای پایدار در پس‌زمینه، از این دستور استفاده کنید:
+🚀 Step 2: Run in Screen (Background Mode)
+To ensure the tunnel stays active after closing the terminal, run the script inside a screen session:
 
 Bash
 screen -S mps python3 mps.py
-⚙️ مرحله سوم: تنظیمات
-بعد از اجرا، طبق راهنمای زیر عمل کنید:
+⚙️ Step 3: Configuration Guide
+Once the script starts, follow these steps:
 
-اگر در سرور اروپا (خارج) هستید:
+If you are on the Destination Server (Europe/Remote):
 
-عدد 1 را بزنید.
+Select option 1.
 
-یک پورت برای تونل انتخاب کنید (مثلاً 443).
+Enter a tunnel port (e.g., 443).
 
-اگر در سرور ایران هستید:
+If you are on the Bridge Server (Iran/Local):
 
-عدد 2 را بزنید.
+Select option 2.
 
-پورت‌های پنل را وارد کنید (مثلاً 2091,8080).
+Enter your local app ports (e.g., 2091,8080).
 
-آی‌پی خارج و پورت تونل را وارد کنید.
+Enter the Remote Server IP and the tunnel port you chose (443).
 
-🔒 مرحله چهارم: ذخیره و خروج (بسیار مهم)
-وقتی تانل فعال شد، برای اینکه با بستن ترمینال قطع نشود، دکمه‌های ترکیبی زیر را بزنید:
+🔒 Step 4: Detach and Save (Crucial)
+After the tunnel is established, to keep it running in the background:
 
-نگه داشتن کلید Ctrl و زدن A
+Press and hold Ctrl, then press A.
 
-بلافاصله زدن کلید D
+Immediately press D.
+The tunnel is now running safely in the background.
 
-🆔 Channel: @Telhost1
+🛠 Useful Commands
+Reconnect to session: screen -r mps
+
+List active sessions: screen -ls
+
+🆔 Official Channel: @Telhost1
